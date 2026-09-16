@@ -1,0 +1,71 @@
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-color: #f5deb3;
+    margin-bottom: 0;
+}
+body {
+    background: linear-gradient(180deg, #14172e 0%, #1b1f3b 100%);
+    color: #f5deb3;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 20px;
+}
+h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+    color: #ffd76b;
+}
+.table-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #2b2f5c;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    border: 1px solid #454a94;
+}
+table { margin-bottom: 0; background-color: transparent; }
+thead th {
+    background-color: #232752;
+    color: #ffd76b;
+    border: none;
+    padding: 16px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .5px;
+}
+tbody td {
+    padding: 16px 20px;
+    border-color: #454a94 !important;
+    vertical-align: middle;
+    color: #f5deb3;
+    background-color: transparent;
+}
+tr.artist-row { cursor: pointer; transition: background-color .15s ease; }
+tr.artist-row:hover td { background-color: #363c78 !important; }
+tr.artist-row td:first-child { font-weight: 600; color: #ffd76b; }
+tr.artist-row td:first-child::before {
+    content: "▸ ";
+    color: #ffd76b;
+}
+.badge-albums {
+    background-color: #ffd76b;
+    color: #1b1f3b;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: .8rem;
+    font-weight: 700;
+}
+.albums-detail td { background-color: #232752 !important; padding: 8px 20px 20px 40px; border-top: none !important; }
+.albums-detail ul { list-style: none; padding: 0; margin: 10px 0 0; }
+.albums-detail li {
+    padding: 8px 0;
+    border-bottom: 1px solid #454a94;
+    display: flex;
+    justify-content: space-between;
+    color: #f5deb3;
+}
+.albums-detail li:last-child { border-bottom: none; }
+.album-year { opacity: .7; font-size: .85rem; color: #f5deb3; }
+.stars { color: #ffd76b; }
